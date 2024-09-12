@@ -1,6 +1,6 @@
 .headerContainer{
     display:flex;
-    
+    align-items:baseline;
 
 }
 
@@ -14,8 +14,8 @@
 .dateContainer{
 
     font-size:small;
-    font-weight: 500;
-    margin: 5px;
+    font-weight: 600;
+    margin: 0px;
 }
 .footerNotice{
     font-size: small;
@@ -31,17 +31,24 @@
 .imageContainer {
     position: relative;
     display: inline-block;
+    
 }
 
 .overlay-text {
     position: absolute;
     width:317px;
+    font-weight:bold;
     bottom: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.5); 
-    color: rgba(255, 255, 255, 0.848);
+    color: rgba(255, 255, 255, 0.705);
     padding: 10px;
+    opacity: 1; 
     border-radius: 0px;
     font-size: 13px;
-    font-weight: 500;
+    
+}
+
+.imageContainer:hover .overlay-text {
+    opacity: 0; 
 }
