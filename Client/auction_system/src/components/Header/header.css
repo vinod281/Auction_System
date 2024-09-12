@@ -1,0 +1,54 @@
+.headerContainer
+{
+    
+    color: rgb(0, 0, 0);
+    display: flex;
+    
+    
+}
+
+.auctionLogo
+{
+
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.mainbanner
+{
+    margin-top: 20px;
+    
+}
+
+.mainBannerImg
+{
+    height: 100px;
+    width: 600px;
+    object-fit: cover;
+    text-align: center;
+    
+
+}
+
+.textContact
+{
+    margin-left: 10px;
+    text-align:justify;
+    font-size:12px;
+    font-weight: bold;
+}
+.noticeText
+{
+    margin-left: 10px;
+    text-align:justify;
+    font-size:12px;
+    font-weight:1000;
+    color: red;
+}
+.headerText{
+    margin-top: 10px;
+    align-items: end;
+    padding-left: 30px;
+}
