@@ -3,5 +3,5 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 30px;
-    margin: 20px;
+    margin: 30px;
 }

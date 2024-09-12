@@ -1,11 +1,34 @@
 import React from 'react'
 import './cards.css'
 import Card from 'react-bootstrap/Card';
+import Carousel from 'react-bootstrap/Carousel';
+import { useState } from 'react';
+
 
 
 export default function AuctionCard() {
+
+    const [slideInterval, setSlideInterval] = useState(null); // Initially no sliding
+
+    const images = [
+        { src: 'images/wFWD-12.jpg', alt: 'First Image' },
+        { src: 'images/wFWD-10.jpg', alt: 'Second Image' },
+        { src: 'images/wFWD-11.jpg', alt: 'Third Image' }
+    ];
+
+    // Function to start sliding on hover
+    const handleMouseEnter = () => {
+        setSlideInterval(2000); // 2 seconds interval for sliding
+    };
+
+    // Function to stop sliding when hover ends
+    const handleMouseLeave = () => {
+        setSlideInterval(null); // Disable auto-sliding
+    };
+
     return (
         <div>
+
             <Card style={{ width: '20rem' }}>
                 <Card.Body>
                     <div className="headerContainer">
@@ -18,11 +41,33 @@ export default function AuctionCard() {
                     </div>
                 </Card.Body>
 
-                
+
                 <div className="imageContainer">
 
-                    <Card.Img variant="top" src="images/wFWD-12.jpg" height={250} />
-                    <div class="overlay-text">This is your<br></br> faded notice</div>
+                    <Carousel
+                        interval={slideInterval}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                        controls={false} // Hide manual controls (optional)
+                    >
+                        {images.map((image, index) => (
+                            <Carousel.Item key={index}>
+                                <img
+                                    className="d-block w-100"
+                                    src={image.src}
+                                    alt={image.alt}
+                                    style={{ height: '250px', objectFit: 'cover' }}
+                                />
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
+
+                    {/* <Card.Img variant="top" src="images/wFWD-12.jpg" height={250} /> */}
+                    <div class="overlay-text">
+                        Year: 1992<br></br>
+                        Make: FWD<br></br>
+                        Body Style: Truck with Sander
+                    </div>
                 </div>
 
 

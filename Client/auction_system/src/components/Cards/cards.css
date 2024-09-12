@@ -7,15 +7,15 @@
 .noticeContainer{
     color: red;
     font-weight: bold;
-    font-size: small;
-    margin: 5px;
+    font-size: 12px;
+    margin: 0px;
 }
 
 .dateContainer{
 
-    font-size:small;
+    font-size:12px;
     font-weight: 600;
-    margin: 0px;
+    margin-left: 10px;
 }
 .footerNotice{
     font-size: small;
@@ -41,11 +41,12 @@
     bottom: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.5); 
-    color: rgba(255, 255, 255, 0.705);
+    color: rgba(255, 255, 255, 0.858);
     padding: 10px;
     opacity: 1; 
     border-radius: 0px;
     font-size: 13px;
+    
     
 }
 

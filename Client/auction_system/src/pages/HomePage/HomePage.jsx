@@ -13,10 +13,15 @@ export default function HomePage() {
         <Header/>
         
         <NavBar/>
+        <br></br>
         <SearchBar/>
 
         <div className="cardContainer">
 
+        <AuctionCard/>
+        <AuctionCard/>
+        <AuctionCard/>
+        <AuctionCard/>
         <AuctionCard/>
         <AuctionCard/>
         <AuctionCard/>
