@@ -1,0 +1,101 @@
+.footer {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    
+    bottom: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    margin: 10px;
+    flex: 1;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+
+  
+  .social-icons {
+    display: flex;
+    list-style: none;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-icons li a {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;  /* Align items in a column (vertically) */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    margin-bottom: 10px;  /* Adds space between icons */
+  }
+  
+  .social-icons li a {
+    color: white;
+    font-size: 24px;      /* Size of the icons */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons li a:hover {
+    color: #007bff;        /* Changes color on hover */
+  }
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .contact-info p svg {
+    margin-right: 10px;  /* Space between icon and text */
+  }
+  .text-white{
+    text-decoration:none;
+  }
+  .no-underline {
+    text-decoration: none;
+    color: inherit; /* Ensures the link inherits the surrounding text color */
+  }
+  
+  
