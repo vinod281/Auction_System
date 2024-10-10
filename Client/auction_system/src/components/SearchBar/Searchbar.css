@@ -1,98 +1,75 @@
 
-.searchContainer {                      /*main 2 boxes(2 divs)*/
-    display: flex; 
-    flex-direction: row;
-    align-items: center; 
-    justify-content: flex-start; 
-    gap: 10px; 
-    margin-bottom: 20px;
-    margin-left: 300px;
-    
-  }
-  
-  .searchItem-Container{     /*box 1*/
-    display: flex;
-  flex-direction: column;
-    max-width: 150px;
-  }
-  .catagory-container{       /* box 4*/
-    display: flex;
-  flex-direction: column;
-    max-width: 200px;
-    margin-left: 50px;
-    
-  }
-  
- 
-  .zipcode-Container, .distanceContainer  {     /* box 2 and 3*/
-    display: flex;
-  flex-direction: column;
-    max-width: 100px;
-    
-  }
-  
+.searchContainer
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-  input[type="text"], select {
-    padding: 5px; 
-    font-size: 14px; 
-    margin-right: 10px; 
-  }
-  
+.searchBarContainer{
 
-  label {
-    font-weight: bold; 
-    font-size: 14px; 
-    margin-right: 5px; 
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .button1 {
-    align-self: center; 
-    margin-left: 20px; 
-    margin-top: 15px;
-    color: white;
-    border: none;
-    font-size: 14px;
-    border-radius: 5px;
+
+
+.horizontal-form {
+  align-content: center;
+  display: flex;
+  justify-content:baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  width: 100%; 
+  
+}
+.horizontal-form .form-label {
+  color: #333; 
+  font-weight: bold; 
+}
+
+.horizontal-form .form-group {
+  margin-bottom: 0; 
+  flex: 1 1 auto; 
+}
+
+.horizontal-form .form-control {
+  width: 100%; 
+}
+
+.horizontal-form .btn {
+  margin-left: 10px;
+  margin-top: 29px; 
+}
+
+
+
+
+@media (max-width: 768px) {
+  .horizontal-form {
     flex-direction: column;
+  }
 
-    
+  .horizontal-form .btn {
+    margin-left: 0; 
+    margin-top: 10px; 
   }
-  .button2 {
-    align-self: center; 
-    margin-left: 10px; 
-    color: white;
-    border: none;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-top: 15px;
+}
 
-  }
-  .button3 {
-    align-self: center; 
-    margin-left: 10px; 
-    color: white;
-    border: none;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-top: 15px;
 
-  }
-  
-  
-  .button1 button:hover {
-    background-color: #ff4c3c;
-  }
-  .button2 button:hover {
-    background-color: #ff4c3c; 
-  }
-  .button3 button:hover {
-    background-color: #ff4c3c; 
-  }
-  
 
-  form {
-    display: flex; 
-    flex-wrap: nowrap;
-  }
+.btn1, .btn2 {
   
+  background-color: #f01d1d; 
+  color: #ffffff; 
+  border: 1px solid #ffffff; 
+}
+
+.btn1:hover, .btn2:hover {
+  background-color: #ca1818; 
+  color: #fff; 
+  border: 1px solid #ffffff; 
+}
+
