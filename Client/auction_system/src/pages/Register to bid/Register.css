@@ -1,0 +1,111 @@
+.register-form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add gap between columns */
+}
+
+.form-left, .form-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form input, 
+.register-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.phone-input-container {
+    display: flex; /* Flexbox for aligning items */
+    align-items: center; /* Center align items vertically */
+    position: relative; /* Position relative for vertical line */
+}
+
+.country-code {
+    position: absolute;
+    left: 10px; /* Adjust to position the code */
+    top: 35%; /* Vertically center the code */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    color: #555;
+    font-size: 13px;
+    pointer-events: none; /* Make sure clicks go through to the input */
+}
+.phone-input {
+    padding-left: 70px; /* Ensure input starts after the country code and separator */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Adjust the width of the input */
+    box-sizing: border-box;
+  }
+  
+
+.phone-input::placeholder {
+    color: #555;
+    padding-left: 5px; /* Add space to the left of the placeholder */
+    font-size: 13px;
+}
+.phone-input-container::after {
+    content: '';
+    position: absolute;
+    left: 40px; /* Adjust position for vertical line */
+    height: 40%; /* Adjust the height of the vertical line */
+    width: 1px;
+    background-color: #ccc;
+    top: 20%; /* Vertically centers the line */
+}
+.error {
+    color: red;
+    font-size: 14px;
+  }
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.register-button {
+    background-color: red; /* Adjusted to match your color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.cancel-button {
+    background-color: grey; /* Adjusted to match your color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+  
+  
