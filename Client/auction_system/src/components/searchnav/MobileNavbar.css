@@ -1,0 +1,93 @@
+/* Custom Navbar Styling for Compact Look */
+.custom-navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 4px 10px; /* Reduced padding to make navbar height smaller */
+    min-height: 20px;  /* Ensures that the navbar doesn't get too tall */
+  }
+  
+  .custom-navbar .navbar-brand {
+    font-weight: bold;
+    color: #343a40;
+    font-size: 1.1rem; /* Adjusted font size to match the compact navbar */
+    padding: 0; /* Remove extra padding */
+    margin-right: 15px; /* Space after brand */
+  }
+  
+  .custom-navbar .navbar-nav .nav-link {
+    color: #343a40;
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-right: 10px; /* Reduced margin between nav links */
+    padding: 5px 10px;  /* Smaller padding for a tighter layout */
+    line-height: 1.2;   /* Reduced line-height for compact spacing */
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .language-switcher {
+    margin-right: 15px; /* Reduced margin for a more compact layout */
+
+  }
+
+  .language-switcher .dropdown-item{
+    font-size: 0.875rem;
+  }
+  
+  .language-dropdown .dropdown-toggle {
+    background-color: #f8f9fa;
+    color: #343a40;
+    border: none;
+    padding: 5px 10px; /* Reduced padding to match navbar's reduced height */
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .language-dropdown .dropdown-menu {
+    min-width: 140px; /* Reduced dropdown width */
+  }
+  
+  .language-dropdown .dropdown-item {
+    padding: 6px 15px; /* Compact dropdown item padding */
+  }
+  
+  .language-dropdown .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .email-alert-btn {
+    font-weight: bold;
+    padding: 4px 10px; /* Reduced padding for a smaller button */
+    font-size: 0.85rem; /* Slightly smaller font size */
+  }
+  
+  .mobile-search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px; /* Reduced margin for more compact space */
+  }
+  
+  .search-input {
+    border-radius: 20px; /* Slightly smaller border-radius for compact form */
+    padding-left: 10px;  /* Reduced padding inside input */
+    padding-right: 10px;
+    border: 1px solid #ced4da;
+    height: 30px; /* Reduced input height */
+  }
+  
+  .search-btn {
+    margin-left: 8px; /* Adjusted margin */
+    border-radius: 20px; /* Smaller border radius */
+    padding: 4px 10px; /* Reduced padding */
+    font-size: 0.85rem; /* Smaller font size for the button */
+  }
+  
+  .search-btn:hover {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  
