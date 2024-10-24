@@ -1,0 +1,6 @@
+.auction-image {
+    width: 100%;      /* Adjusts the width of the image to fill the container */
+    max-width: 300px; /* Sets a maximum width */
+    height: auto;     /* Maintains aspect ratio */
+  }
+    
